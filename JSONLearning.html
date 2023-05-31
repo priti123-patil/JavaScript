@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON TUT</title>
+</head>
+<body>
+    <!-- JSON is an notation which follows js syntax of object and it is used to transfer the data -->
+    <div class="container">This is my container</div>
+    <script>
+        let jsonobj = {
+            name : "priti",
+            class : "IT",
+            rollno : 80
+        }
+        console.log(jsonobj);
+        let myjsonstr = JSON.stringify(jsonobj);//it is used to convert json object to string
+        console.log(myjsonstr);
+        myjsonstr = myjsonstr.replace('IT','CS');
+        console.log(myjsonstr);
+        newjsonobj = JSON.parse(myjsonstr);//it takes the valid json string and parse it.it convert string to object 
+        console.log(newjsonobj);
+    </script>
+</body>
+</html>

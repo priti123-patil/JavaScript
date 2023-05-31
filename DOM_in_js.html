@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <!--
+        Dom - Document Object Model
+    -->
+    <div id="main" class="container">
+        <ul id="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>Social Links</li>
+        </ul>
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main)
+        let l = document.getElementById('list');
+        l.innerHTML=" <li>Dynamic com</li> "
+        let containers = document.getElementsByClassName('container')
+        console.log(containers)
+        console.log(document.querySelector('.container'))
+    </script>
+</body>
+</html>

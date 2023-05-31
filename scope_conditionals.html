@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals in js</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+        </ul>
+    </div>
+    <script>
+        var str ="this is a string"
+        console.log(str)
+        let global = "grgg"
+        console.log(global)
+        //let variable has global scope it cant be redeclared like others 
+        const a="fefrf"
+        // u  cant change value of const - it is constant
+        let age = 21
+        if(age > 18)
+        {
+            console.log("You can have driving license")
+        } 
+        else if(age > 20){
+
+        }
+        else{
+            console.log("You cant drive")
+        }
+
+        switch(age)
+        {
+            case 19:
+                console.log("! 19")
+                break ;
+            case 20:
+                console.log(" it is 20 ")
+                break;
+            default:
+                console.log("It is not 19 or 20")
+                break;
+        }
+        let i=0
+        for(i=0;i<5;i++)
+        {
+            console.log(i);
+        }
+        let friends = ["priti","srunit","shri","amit"]
+        friends.forEach(
+            function f(element){
+                console.log(element);
+            }
+        )
+        let student = {
+            name :"priti",
+            cpi : 9,
+            class : "IT"
+        }
+        //Use this loop to iterate through the object which has key value pair 
+        for(key in student)
+        {
+            console.log(` key : ${key} value: ${student[key]}`)
+        }
+    </script>
+</body>
+</html>

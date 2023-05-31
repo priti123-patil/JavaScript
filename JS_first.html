@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        //javascript is an dynamic typing lang we dont have to give a data type 
+        var a = 30;
+        var s = "priti";
+        console.log(a);
+        console.log(s); 
+        //operators in js
+        //1.unary 2.binary
+        console.log( ++a );
+        console.log(a + s);
+        var s2 = "Patil"
+        var temp = `${s} ${s2} \n is a nice girl`
+        console.log(temp)
+        console.log(temp.length)
+        var y = new String("This is constructor")
+        console.log(y)
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <div id="content">
+
+        </div>
+        <div id="c">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi atque suscipit, repudiandae, architecto necessitatibus, harum saepe iusto consequatur hic fugiat quibusdam ex non? At maxime perspiciatis, eius iste, adipisci et ipsum expedita assumenda nulla quod aspernatur, ut perferendis veritatis? Aliquam?
+        </div>
+    </div>
+    <script>
+        //Write your js here
+        console.log('Hello world')
+        //It is printed in developers console not on web page 
+        document.getElementById('content').innerHTML = '<h2>This is inner html</h2>'
+        // lastIndexOf,indexOf.replace,substring,trim,toLowerCase,toUpperCase,charAt,slice,charCodeAt
+        // str[3],str[3,5]
+        var str = "Priti Patil"
+        console.log(str[2])// i
+        console.log(str[1])// r
+        console.log(str.indexOf('rit'))
+        console.log(str.lastIndexOf('i'))
+        var news = str.replace("Priti","Srunithi")
+        console.log(news )
+        console.log(str.substring(2,4))// it
+        console.log(str.slice(2,4))// it
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.clock{
+    height: 240px;
+    width: 240px;
+    border: 2px solid rgb(233, 228, 228);
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+body{
+    color: white ;
+    display: flex;
+    font-weight: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 200px;
+    background: rgb(72, 61, 61);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow function tutorial
+    </div>
+    <script>
+        //function greet(){
+        //    console.log("Gm");
+        //}
+        //This is how we write the above function in short form which is called as arrow function
+        greet = ()=> console.log("Gm");
+        greet();
+
+        let sum = (a,b) => a+b;
+        console.log(sum(2,3));
+
+        let half = a => a/2;
+        console.log(half(40));
+
+        let classobj = {
+            students : ["priti", "shri" , "prem"],
+            print()
+            {
+                this.students.forEach(std => {
+                console.log("Hello " +std);
+                })
+            }
+        }
+
+        classobj.print();
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS setTimeout clearTimeout </title>
+</head>
+<body>
+    <div class="container">
+        Current Time : <span id="time"></span> 
+    </div>
+    <script>
+        //setInterval
+        //setTimeOut
+        //clearTimeOut
+        console.log("This is a jas tut")
+        //setTimeout- allows us to run the function once after the interval of time
+        //clearTimeout- allows us to run the function once after the interval of time
+        function greet(name , byeText)
+        {
+            console.log("Hello >>> " +name+ " " + byeText );
+        }
+        timeOutId = setTimeout(greet, 5000, "priti" , "Take Care"); 
+        console.log(timeOutId);
+        clearTimeout(timeOutId);
+
+        //clearTimeOut is used to clear the time which we have set using setTimeout
+        //Dont call like this - it is wrong method u should not write function parenthesis
+        //setTimeout(greet("gfh","grg"))
+        //setInterval is used to set the interval and repeatedly print the same o/p
+        //clearInterval is used to clear the interval which we have set  
+        function greet2(){
+            console.log("Thats using setInterval");
+        }        
+        intervalId = setInterval(greet2 , 1000);
+        console.log(intervalId);
+        clearInterval(intervalId);
+
+        function displayDateTime()
+        {
+            date = new Date();
+            console.log(date);
+            document.getElementById('time').innerHTML = date;
+        }
+        setInterval(displayDateTime,1000);
+    </script>
+</body>
+</html>
